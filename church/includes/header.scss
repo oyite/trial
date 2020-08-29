@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 62.5%;
+}
+main{
+    background: rgb(248, 243, 243);
+}
+@mixin flexbox ($display, $flex-direction, $flex-justify, $flex-align) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $flex-justify;
+    align-items: $flex-align;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 1rem;
+    background: rgb(218, 221, 218);
+    color: black;
+    @include flexbox(flex, row, space-between, center);
+     h2{
+         font-family: comic sans ms;
+         font-size: 0.9rem;
+     } 
+     button{
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 100%;
+         @include flexbox(flex, row, flex-end, flex-start);
+         outline: none;
+         border: none;
+         background: transparent;
+         img{
+             width: 2.5rem;
+             height: 2.5rem;
+         }
+         ul{
+             position: absolute;
+             top: 55px;
+             list-style: none;
+             width: 100%;
+             @include flexbox(flex, column, center, center);
+             z-index: 1;
+             background: rgb(129, 129, 129);
+             visibility: hidden;
+             animation: leftside 0.5s linear;
+             li{
+                 margin: 0.8rem 0;
+                  a{
+                      text-decoration: none;
+                      font-family: Georgia;
+                      font-size: 1.4rem;
+                      color: black;
+                  }
+                  a:hover{
+                      text-decoration: underline;
+                      opacity: 0.7;
+                  }
+             }
+         }
+     }
+}
+main{
+    background: rgb(241, 241, 241);
+}
+body{
+    background: rgb(241, 241, 241);
+}
+footer{
+    width: 100%;
+    height: 10rem;
+    @include flexbox(flex, column, center, center);
+    background: black;
+    font-family: 'times new roman';
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    text-align: center;
+     a{
+         text-decoration: none;
+         color: white;
+         margin: 0.8rem 0;
+     }
+}
+@media (min-width: 600px){
+    nav{
+        height: 4rem;
+         h2{
+             font-size: 1rem;
+         } 
+         button{
+             img{
+                 visibility: hidden;
+             }
+             ul{
+                 top: 0;
+                 height: 4rem;
+                 padding-right: 1rem;
+                 @include flexbox(flex, row, flex-end, center);
+                 background: transparent;
+                 visibility: visible;
+                 li{
+                     padding: 0 0.5rem;
+                      a{
+                          font-size: 1.5rem;
+                      }
+                 }
+             }
+         }
+    }
+}

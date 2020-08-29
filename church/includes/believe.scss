@@ -1,0 +1,88 @@
+@mixin flexbox ($display, $flex-direction,    $flex-justify, $flex-align) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $flex-justify;
+    align-items: $flex-align;
+}
+.img-section{
+    width: 100%;
+    height: 16rem;
+    position: relative;
+     img{
+         width: 100%;
+         height: 100%;
+     }
+     h4{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: tahoma, impact;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+        text-shadow: 2px 3px 2px white;
+     }
+}
+.word-section{
+     width: 90%;
+     margin: auto;
+      h4{
+        font-family: tahoma, impact;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        margin: 1rem 0 0 0;
+      }
+      p{
+          @extend h4;
+          margin: 0.6rem;
+          font-size: 1.1rem;
+      }
+      button{
+        width: 8rem;
+        height: 2.1rem;
+        outline: none;
+        border: none;
+        border-radius: 0.5rem;
+        background: rgb(206, 99, 12);
+        margin: 1rem;
+        a{
+          color: white;
+          text-decoration: none;
+          font-size: 0.8rem;
+        }
+     }
+}
+@media (min-width: 600px){
+    .img-section{
+    height: 18rem;
+     h4{
+        font-size: 1.7rem;
+     }
+  }
+}
+@media (min-width: 800px){
+    .img-section{
+        height: 20rem;
+      }
+      .word-section{
+        width: 80%;
+      }
+}
+@media (min-width: 930px){
+  .img-section{
+        height: 22rem;
+     }
+     .word-section{
+      width: 75%;
+     }
+}
+@media (min-width: 1060px){
+  .img-section{
+        height: 24rem;
+     }
+     .word-section{
+      width: 70%;
+     } 
+}

@@ -1,0 +1,158 @@
+.words, .words p {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  color: black;
+}
+
+.words h3 {
+  font-family: tahoma, impact;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 0.8rem auto;
+}
+
+.words p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+}
+
+.form h4 {
+  width: 100%;
+  text-align: center;
+  margin: 0.8rem auto;
+  font-size: 1.5rem;
+}
+
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.form form label {
+  font-size: 1.1rem;
+}
+
+.form form input {
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 2.1rem;
+  font-size: 1rem;
+  margin: 0.8rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+
+.form form textarea {
+  outline: none;
+  border: none;
+  resize: vertical;
+  max-height: 10rem;
+  margin: 1rem 0;
+  width: 80%;
+}
+
+.form form button {
+  outline: none;
+  border: none;
+  width: 8rem;
+  height: 2.1rem;
+  font-size: 1rem;
+  background: #504e4e;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+@media (min-width: 600px) {
+  .words, .words p {
+    width: 80%;
+  }
+  .words h3 {
+    font-size: 1.6rem;
+    width: 90%;
+  }
+  .words p {
+    font-size: 1.3rem;
+  }
+  .form {
+    width: 95%;
+  }
+  .form form {
+    width: 90%;
+    margin: auto;
+  }
+  .form form input {
+    width: 70%;
+  }
+  .form form textarea {
+    width: 70%;
+  }
+}
+
+@media (min-width: 700px) {
+  .words, .words p {
+    width: 75%;
+  }
+  .words h3 {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  .words p {
+    font-size: 1.45rem;
+    line-height: 1.8rem;
+  }
+  .form form {
+    width: 80%;
+  }
+  .form form input {
+    width: 60%;
+  }
+  .form form textarea {
+    width: 60%;
+  }
+}
+
+@media (min-width: 850px) {
+  .words, .words p {
+    width: 70%;
+  }
+  .words h3 {
+    font-size: 1.8rem;
+    width: 75%;
+  }
+  .words p {
+    font-size: 1.55rem;
+    line-height: 1.9rem;
+  }
+  .form form {
+    width: 70%;
+  }
+  .form form input {
+    width: 50%;
+  }
+  .form form textarea {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

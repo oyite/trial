@@ -1,0 +1,162 @@
+
+@mixin flexbox ($display, $flex-direction, $flex-justify, $flex-align) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $flex-justify;
+    align-items: $flex-align;
+}
+@mixin bgimg ($img, $cover, $repeat, $center) {
+    background-image: url($img);
+    background-size: $cover;
+    background-repeat: $repeat;
+    background-position: $center;
+}
+.main-header{
+    width: 100%;
+    height: 5rem;
+    @include flexbox(flex, column, center, center);
+    font-family: tahoma, impact;
+    font-size: 1.3rem;
+}
+.church-images{
+    width: 100%;
+    height: 20rem;
+    @include bgimg("images/b.jpeg", cover, no-repeat, center);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.main-texts{
+    @extend .main-header;
+    height: 6.5rem;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+}
+.brief-services, .location, .about-us{
+    width: 100%;
+    height: 28rem;
+    margin: auto;
+      .img1{
+          width: 100%;
+          height: 13rem;
+          img{
+              width: 100%;
+              height: 100%;
+          }
+          @include bgimg("images/p.jpg", cover, no-repeat, top);
+      }
+      .img2{
+          @extend .img1;
+          @include bgimg("images/p1.jpg", cover, no-repeat, top);
+      }
+      .img3{
+        @extend .img1;
+        @include bgimg("images/c.jpeg", cover, no-repeat, top);
+    }
+      h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        padding: 1rem 0 0 0;
+        width: 90%;
+        @include flexbox(flex, row, center, center);
+      }
+      p{
+          @extend h5;
+          padding: 0.8rem 0;
+          margin: auto;
+      }
+      .btn{
+          width: 100%;
+          @include flexbox(flex, row, center, center);
+        button{
+            width: 8rem;
+            height: 2.1rem;
+            outline: none;
+            border: none;
+            border-radius: 0.5rem;
+            background: rgb(206, 99, 12);
+            margin-bottom: 1rem;
+            a{
+              color: white;
+              text-decoration: none;
+              font-size: 0.8rem;
+            }
+        }
+      }
+}
+@media (min-width: 600px){
+    .church-images{
+        height: 22rem;
+    }
+    .main-texts{
+        width: 90%;
+        margin: auto;
+    }
+    .brief-services, .location, .about-us{
+        .img1, .img2, .img3{
+            width: 100%;
+            height: 15rem;
+        }
+    }
+}
+@media (min-width: 700px){
+    .brief-services, .location, .about-us{
+        width: 90%;
+          h5{
+            width: 80%;
+          }
+    }
+}
+@media (min-width: 750px){
+    .main-texts{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    .brief-services, .location, .about-us{
+        width: 90%;
+        height: 20rem;
+        @include flexbox(flex, row, space-between, flex-start);
+        margin: 0 1rem;
+         .img1, .img2, .img3{
+             width: 200%;
+             height: 15.5rem;
+         }
+    }
+}
+@media (min-width: 850px){
+    .church-images{
+        height: 24rem;
+    }
+    .brief-services, .location, .about-us{
+        width: 90%;
+        height: 20rem;
+        .img1, .img2, .img3{
+            width: 200%;
+            height: 16rem;
+        }
+          h5{
+            font-size: 1.3rem;
+          }
+    }
+}
+@media (min-width: 980px){
+    .church-images{
+        height: 26rem;
+    }
+    .main-texts{
+        width: 80%;
+        font-size: 1.7rem;
+    }
+    .brief-services, .location, .about-us{
+        .img1, .img2, .img3{
+            height: 17rem;
+        }
+          h5{
+            font-size: 1.5rem;
+          }
+    }
+}

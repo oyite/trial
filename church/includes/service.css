@@ -1,0 +1,96 @@
+.image-section {
+  width: 100%;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: 16rem;
+}
+
+.image-section .main-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: tahoma, impact;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0c0c0c;
+  text-shadow: 2px 3px 2px white;
+}
+
+.words-section {
+  width: 90%;
+  margin: auto;
+}
+
+.words-section h3, .words-section h5, .words-section h5 span, .words-section p {
+  font-family: tahoma, impact;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  margin: 1rem 0 0 0;
+}
+
+.words-section h5, .words-section h5 span, .words-section p {
+  font-size: 1.1rem;
+}
+
+.words-section p {
+  font-size: 1.1rem;
+}
+
+.words-section button {
+  width: 8rem;
+  height: 2.1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ce630c;
+  margin: 1rem;
+}
+
+.words-section button a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .image-section img {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .image-section img {
+    height: 20rem;
+  }
+  .image-section .main-header {
+    font-size: 1.7rem;
+  }
+  .words-section {
+    width: 80%;
+  }
+}
+
+@media (min-width: 930px) {
+  .image-section img {
+    height: 23rem;
+  }
+  .words-section {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .image-section img {
+    height: 26rem;
+  }
+  .words-section {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=service.css.map */

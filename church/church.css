@@ -1,0 +1,220 @@
+.main-header, .main-texts {
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: tahoma, impact;
+  font-size: 1.3rem;
+}
+
+.church-images {
+  width: 100%;
+  height: 20rem;
+  background-image: url("images/b.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.church-images img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-texts {
+  height: 6.5rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.brief-services, .location, .about-us {
+  width: 100%;
+  height: 28rem;
+  margin: auto;
+}
+
+.brief-services .img1, .brief-services .img2, .brief-services .img3, .location .img1, .location .img2, .location .img3, .about-us .img1, .about-us .img2, .about-us .img3 {
+  width: 100%;
+  height: 13rem;
+  background-image: url("images/p.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.brief-services .img1 img, .brief-services .img2 img, .brief-services .img3 img, .location .img1 img, .location .img2 img, .location .img3 img, .about-us .img1 img, .about-us .img2 img, .about-us .img3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.brief-services .img2, .location .img2, .about-us .img2 {
+  background-image: url("images/p1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.brief-services .img3, .location .img3, .about-us .img3 {
+  background-image: url("images/c.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.brief-services h5, .brief-services p, .location h5, .location p, .about-us h5, .about-us p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 1rem 0 0 0;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brief-services p, .location p, .about-us p {
+  padding: 0.8rem 0;
+  margin: auto;
+}
+
+.brief-services .btn, .location .btn, .about-us .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brief-services .btn button, .location .btn button, .about-us .btn button {
+  width: 8rem;
+  height: 2.1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ce630c;
+  margin-bottom: 1rem;
+}
+
+.brief-services .btn button a, .location .btn button a, .about-us .btn button a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .church-images {
+    height: 22rem;
+  }
+  .main-texts {
+    width: 90%;
+    margin: auto;
+  }
+  .brief-services .img1, .brief-services .img2, .brief-services .img3, .brief-services .img2, .brief-services .img3, .location .img1, .location .img2, .location .img3, .location .img2, .location .img3, .about-us .img1, .about-us .img2, .about-us .img3, .about-us .img2, .about-us .img3 {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .brief-services, .location, .about-us {
+    width: 90%;
+  }
+  .brief-services h5, .brief-services p, .location h5, .location p, .about-us h5, .about-us p {
+    width: 80%;
+  }
+}
+
+@media (min-width: 750px) {
+  .main-texts {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+  .brief-services, .location, .about-us {
+    width: 90%;
+    height: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 1rem;
+  }
+  .brief-services .img1, .brief-services .img2, .brief-services .img3, .brief-services .img2, .brief-services .img3, .location .img1, .location .img2, .location .img3, .location .img2, .location .img3, .about-us .img1, .about-us .img2, .about-us .img3, .about-us .img2, .about-us .img3 {
+    width: 200%;
+    height: 15.5rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .church-images {
+    height: 24rem;
+  }
+  .brief-services, .location, .about-us {
+    width: 90%;
+    height: 20rem;
+  }
+  .brief-services .img1, .brief-services .img2, .brief-services .img3, .brief-services .img2, .brief-services .img3, .location .img1, .location .img2, .location .img3, .location .img2, .location .img3, .about-us .img1, .about-us .img2, .about-us .img3, .about-us .img2, .about-us .img3 {
+    width: 200%;
+    height: 16rem;
+  }
+  .brief-services h5, .brief-services p, .location h5, .location p, .about-us h5, .about-us p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .church-images {
+    height: 26rem;
+  }
+  .main-texts {
+    width: 80%;
+    font-size: 1.7rem;
+  }
+  .brief-services .img1, .brief-services .img2, .brief-services .img3, .brief-services .img2, .brief-services .img3, .location .img1, .location .img2, .location .img3, .location .img2, .location .img3, .about-us .img1, .about-us .img2, .about-us .img3, .about-us .img2, .about-us .img3 {
+    height: 17rem;
+  }
+  .brief-services h5, .brief-services p, .location h5, .location p, .about-us h5, .about-us p {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=church.css.map */
